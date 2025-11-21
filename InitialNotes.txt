@@ -1,0 +1,33 @@
+person matching
+based off of categories like location, shared friends, school, etc
+weighted by how many connections between
+
+looking at
+relationship weights
+lots of data
+recommendation algorithm calculating good matches based on compatability score based on values
+by next week have some familiarity w syntax/platforms installed
+
+NODES
+
+People:
+FirstName
+LastName
+Age
+
+School:
+SchoolName
+
+Hobby:
+HobbyName
+
+Major:
+MajorName
+
+Class:
+ClassName
+ClassNumber
+ClassTerm
+
+DESCRIPTION:
+Friend-finding application based off of commonality in academics/hobbies.
