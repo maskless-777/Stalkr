@@ -1,0 +1,30 @@
+People Relationship Queries
+
+MATCH (p1:People {PersonID: 1}) MATCH (p2:People {PersonID: 2}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 1}) MATCH (p2:People {PersonID: 5}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 2}) MATCH (p2:People {PersonID: 5}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 2}) MATCH (p2:People {PersonID: 3}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 3}) MATCH (p2:People {PersonID: 5}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID:4}) MATCH (p2:People {PersonID: 5}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 5}) MATCH (p2:People {PersonID: 6}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 5}) MATCH (p2:People {PersonID: 7}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 5}) MATCH (p2:People {PersonID: 9}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 5}) MATCH (p2:People {PersonID: 10}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 6}) MATCH (p2:People {PersonID: 7}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 7}) MATCH (p2:People {PersonID: 10}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+MATCH (p1:People {PersonID: 9}) MATCH (p2:People {PersonID: 10}) CREATE (p1)-[:KNOWS]->(p2), (p2)-[:KNOWS]->(p1)
+
+ClassNodes:
+MATCH (c1:Classes {: CST211}) MATCH (c2:Classes {ClassNum: CST324}) CREATE (c1)-[:PREREQ]->(c2)
