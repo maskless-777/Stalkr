@@ -1,0 +1,81 @@
+// PEOPLE->CLASSES
+
+MATCH (p:People {FirstName: "Shira"}) 
+MATCH (c:Classes {CourseName: "How to be a Nerd"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Shira"}) 
+MATCH (c:Classes {CourseName: "Intro to Talking"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Jamila"}) 
+MATCH (c:Classes {CourseName: "How to be a Nerd"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Jamila"}) 
+MATCH (c:Classes {CourseName: "Intro to Talking"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Danielle"}) 
+MATCH (c:Classes {CourseName: "How the Body Works I Guess"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Danielle"}) 
+MATCH (c:Classes {CourseName: "All About Arms"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Inti"}) 
+MATCH (c:Classes {CourseName: "Intro to Talking"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Azarya"}) 
+MATCH (c:Classes {CourseName: "How to be a Nerd"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Azarya"}) 
+MATCH (c:Classes {CourseName: "How the Body Works I Guess"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Azarya"}) 
+MATCH (c:Classes {CourseName: "All About Arms"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Maximilian"}) 
+MATCH (c:Classes {CourseName: "How the Body Works I Guess"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Maximilian"}) 
+MATCH (c:Classes {CourseName: "Intro to Talking"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Kathleen"}) 
+MATCH (c:Classes {CourseName: "Database Systems and Design"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Kathleen"}) 
+MATCH (c:Classes {CourseName: "Linux"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Kennith"}) 
+MATCH (c:Classes {CourseName: "Data Structures"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Kennith"}) 
+MATCH (c:Classes {CourseName: "Linux"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Antelmo"}) 
+MATCH (c:Classes {CourseName: "Linux"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Antelmo"}) 
+MATCH (c:Classes {CourseName: "Data Structures"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Antelmo"}) 
+MATCH (c:Classes {CourseName: "Database Systems and Design"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
+
+MATCH (p:People {FirstName: "Chrissy"}) 
+MATCH (c:Classes {CourseName: "Linux"}) 
+CREATE (p)-[:ENROLLED_IN]->(c);
