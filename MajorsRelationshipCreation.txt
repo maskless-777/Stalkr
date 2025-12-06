@@ -1,0 +1,41 @@
+// PEOPLE->MAJORS
+
+MATCH (p:People {FirstName: "Shira"}) 
+MATCH (m:Majors {MajorName: "Communications"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Jamila"}) 
+MATCH (m:Majors {MajorName: "Communications"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Inti"}) 
+MATCH (m:Majors {MajorName: "Communications"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Danielle"}) 
+MATCH (m:Majors {MajorName: "Bio-Health"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Azarya"}) 
+MATCH (m:Majors {MajorName: "Bio-Health"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Maximilian"}) 
+MATCH (m:Majors {MajorName: "Bio-Health"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Kennith"}) 
+MATCH (m:Majors {MajorName: "Embedded Systems Engineering"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Kathleen"}) 
+MATCH (m:Majors {MajorName: "Embedded Systems Engineering"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Antelmo"}) 
+MATCH (m:Majors {MajorName: "Software Engineering"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
+
+MATCH (p:People {FirstName: "Chrissy"}) 
+MATCH (m:Majors {MajorName: "Software Engineering"}) 
+CREATE (p)-[:MAJORS_IN]->(m);
