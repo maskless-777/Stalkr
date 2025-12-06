@@ -1,7 +1,8 @@
-1, Database Systems and Design, CST324, Fall 25
-2, Data Structures, CST211, Spring 24
-3, Intro to Talking, COMM101, Winter 26
-4, How the Body Works I Guess, BIO521, Fall 25
-5, How to be a Nerd, GEN201, Winter 26
-6, Linux, CST240, Spring 24
-7, All About Arms, BIO200, Spring 26
+CourseID,CourseName,CourseTerm
+CST324,Database Systems and Design,Fall 25
+CST211,Data Structures,Spring 24
+COMM101,Intro to Talking,Winter 26
+BIO521,How the Body Works I Guess,Fall 25
+GEN201,How to be a Nerd,Winter 26
+CST240,Linux,Spring 24
+BIO200,All About Arms,Spring 26
