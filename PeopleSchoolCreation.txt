@@ -1,0 +1,20 @@
+MATCH (p:People {PersonID: 4}) MATCH (s:Schools {SchoolID: 3}) CREATE (p)-[:ATTENDS]->(s);
+
+
+MATCH (p:People {PersonID: 6}) MATCH (s:Schools {SchoolID: 3}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 5}) MATCH (s:Schools {SchoolID: 1}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 3}) MATCH (s:Schools {SchoolID: 1}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 7}) MATCH (s:Schools {SchoolID: 1}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 1}) MATCH (s:Schools {SchoolID: 1}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 2}) MATCH (s:Schools {SchoolID: 1}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 8}) MATCH (s:Schools {SchoolID: 2}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 9}) MATCH (s:Schools {SchoolID: 2}) CREATE (p)-[:ATTENDS]->(s);
+
+MATCH (p:People {PersonID: 10}) MATCH (s:Schools {SchoolID: 2}) CREATE (p)-[:ATTENDS]->(s);
