@@ -1,0 +1,65 @@
+// PEOPLE->HOBBIES
+
+MATCH (p:People {FirstName: "Chrissy"}) 
+MATCH (h:Hobbies {HobbyName: "Running"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Danielle"}) 
+MATCH (h:Hobbies {HobbyName: "Running"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Danielle"}) 
+MATCH (h:Hobbies {HobbyName: "Archery"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Antelmo"}) 
+MATCH (h:Hobbies {HobbyName: "Nerf"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Kennith"}) 
+MATCH (h:Hobbies {HobbyName: "Fishing"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Jamila"}) 
+MATCH (h:Hobbies {HobbyName: "Hiking"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Maximilian"}) 
+MATCH (h:Hobbies {HobbyName: "Dungeons and Dragons"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Maximilian"}) 
+MATCH (h:Hobbies {HobbyName: "Video Games"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Kathleen"}) 
+MATCH (h:Hobbies {HobbyName: "Video Games"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Kathleen"}) 
+MATCH (h:Hobbies {HobbyName: "Baking"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Inti"}) 
+MATCH (h:Hobbies {HobbyName: "Video Games"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Inti"}) 
+MATCH (h:Hobbies {HobbyName: "Disc Golf"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Azarya"}) 
+MATCH (h:Hobbies {HobbyName: "Bowling"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Shira"}) 
+MATCH (h:Hobbies {HobbyName: "Video Games"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Shira"}) 
+MATCH (h:Hobbies {HobbyName: "Gardening"}) 
+CREATE (p)-[:ENJOYS]->(h);
+
+MATCH (p:People {FirstName: "Shira"}) 
+MATCH (h:Hobbies {HobbyName: "Crochet"}) 
+CREATE (p)-[:ENJOYS]->(h);
