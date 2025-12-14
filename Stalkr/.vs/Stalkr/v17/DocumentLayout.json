@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\neo4jservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:neo4jservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\services\\neo4jservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:services\\neo4jservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,30 +32,31 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Neo4jService.cs",
-              "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Neo4jService.cs",
-              "RelativeDocumentMoniker": "Neo4jService.cs",
-              "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Neo4jService.cs",
-              "RelativeToolTip": "Neo4jService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Services\\Neo4jService.cs",
+              "RelativeDocumentMoniker": "Services\\Neo4jService.cs",
+              "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Services\\Neo4jService.cs",
+              "RelativeToolTip": "Services\\Neo4jService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T01:37:30.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-14T01:32:35.703Z"
+              "WhenOpened": "2025-12-14T01:32:35.703Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -63,8 +64,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T01:25:15.446Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-14T01:25:15.446Z"
             }
           ]
         }
