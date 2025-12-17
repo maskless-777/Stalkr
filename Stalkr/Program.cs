@@ -50,9 +50,7 @@ namespace Stalkr
                 return GraphDatabase.Driver(uri, AuthTokens.Basic(user, password));
             });
 
-            builder.Services.AddScoped<IRepository<PeopleModel>, PeopleRepository>();
-
-
+            builder.Services.AddScoped<IRepository<MajorModel>, MajorRepository>();
             builder.Services.AddScoped<IRepository<ClassesModel>, ClassesRepository>();
             builder.Services.AddScoped<IRepository<PeopleModel>, PeopleRepository>();
 
