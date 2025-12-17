@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\repositories\\peoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\peoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\models\\peoplemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\peoplemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\models\\peoplemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\peoplemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\models\\majormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PeopleController.cs",
               "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Controllers\\PeopleController.cs",
               "RelativeDocumentMoniker": "Controllers\\PeopleController.cs",
-              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Controllers\\PeopleController.cs*",
-              "RelativeToolTip": "Controllers\\PeopleController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Controllers\\PeopleController.cs",
+              "RelativeToolTip": "Controllers\\PeopleController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T06:54:55.22Z",
               "EditorCaption": ""
@@ -116,33 +116,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PeopleModel.cs",
               "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\PeopleModel.cs",
               "RelativeDocumentMoniker": "Models\\PeopleModel.cs",
               "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\PeopleModel.cs",
               "RelativeToolTip": "Models\\PeopleModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T06:52:54.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PeopleRepository.cs",
               "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\PeopleRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\PeopleRepository.cs",
-              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\PeopleRepository.cs",
-              "RelativeToolTip": "Repositories\\PeopleRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAvAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\PeopleRepository.cs*",
+              "RelativeToolTip": "Repositories\\PeopleRepository.cs*",
+              "ViewState": "AgIAAF4AAAAAAAAAAADwv20AAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T06:44:39.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "IRepositorycs.cs",
               "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\IRepositorycs.cs",
               "RelativeDocumentMoniker": "Repositories\\IRepositorycs.cs",
@@ -187,7 +187,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-14T01:25:15.446Z",
               "EditorCaption": ""

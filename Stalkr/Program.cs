@@ -41,7 +41,7 @@ namespace testStalkr
 
         private static void AddServices(WebApplicationBuilder builder)
         {
-            builder.Services.AddScoped<PeopleRepository>();
+            builder.Services.AddScoped<IRepository<PeopleModel>, PeopleRepository>();
 
             // Add services to the container.
 
