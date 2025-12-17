@@ -7,21 +7,27 @@ namespace Stalkr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PeopleController(
-        IRepository<PeopleModel> repo) : ControllerBase
+    public class PeopleController : ControllerBase
     {
+        private readonly IRepository<PeopleModel> _repo;
+
+        public PeopleController(IRepository<PeopleModel> repo)
+        {
+            _repo = repo;
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAllPeopleAsync()
         {
             try
             {
                 Console.WriteLine("In ppl controller");
-                var people = await repo.GetAllAsync();
+                var people = await _repo.GetAllAsync();
                 return Ok(people);
             }
             catch (Exception ex)
             {
-                //Console.WriteLine(ex);
+                Console.WriteLine(ex);
                 return StatusCode(StatusCodes.Status500InternalServerError);
             }
         }
@@ -31,80 +37,68 @@ namespace Stalkr.Controllers
         {
             try
             {
-                var product = await repo.FindByIdAsync(id);
-                if (product == null)
-                {
+                var person = await _repo.FindByIdAsync(id);
+                if (person == null)
                     return NotFound();
-                }
-                return Ok(product);
+                return Ok(person);
             }
             catch (Exception e)
             {
-                //logger.LogError(e, $"Error retrieving address with id {id}");
+                Console.WriteLine(e);
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
             }
         }
-
 
         [HttpPost]
-        public async Task<IActionResult> CreatePersonAsync(PeopleModel pplModel)
+        public async Task<IActionResult> CreatePersonAsync([FromBody] PeopleModel pplModel)
         {
             try
             {
-                var numberPeopleCreated = await repo.InsertAsync(pplModel);
-
-
+                await _repo.InsertAsync(pplModel);
                 return Ok("Person created");
             }
-            catch
+            catch (Exception e)
             {
+                Console.WriteLine(e);
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
             }
         }
 
-
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAddressAsync(int id)
+        public async Task<IActionResult> DeletePersonAsync(int id)
         {
             try
             {
-                if (await repo.FindByIdAsync(id) == null)
-                {
+                if (await _repo.FindByIdAsync(id) == null)
                     return NotFound($"Person with id {id} cannot be found");
-                }
 
-                var numberPeopleDeleted = await repo.DeleteAsync(id);
-
+                await _repo.DeleteAsync(id);
                 return Ok("Person Deleted!");
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                //logger.LogError(e.Message, "Error deleting addresss with id {AddressID}.", id);
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
             }
         }
 
-
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAddressAsync(int id, PeopleModel updatedPeople)
+        public async Task<IActionResult> UpdatePersonAsync(int id, [FromBody] PeopleModel updatedPeople)
         {
             try
             {
-                if (await repo.FindByIdAsync(id) == null)
-                {
+                if (await _repo.FindByIdAsync(id) == null)
                     return NotFound($"Person with id {id} cannot be found");
-                }
 
-                var numberPeopleUpdated = await repo.UpdateAsync(id, updatedPeople);
-
+                await _repo.UpdateAsync(id, updatedPeople);
                 return Ok("Person Updated!");
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);  
+                Console.WriteLine(e);
                 return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
             }
         }
     }
+
 }

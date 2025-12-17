@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using Neo4j.Driver;
 using Stalkr.Models;
 
@@ -7,149 +6,107 @@ namespace Stalkr.Repositories
 {
     public class PeopleRepository : IRepository<PeopleModel>
     {
+        private readonly IDriver _driver;
 
-
-        const string dbUri = "<uri>";
-        const string dbUser = "<user>";
-        const string dbPassword = "<pass>";
-
-        public async Task<bool> DeleteAsync(int id)
+        public PeopleRepository(IDriver driver)
         {
-            Console.WriteLine("in deteeAsync");
-
-            await using var driver = GraphDatabase.Driver(dbUri, AuthTokens.Basic(dbUser, dbPassword));
-            await driver.VerifyConnectivityAsync();
-
-            var result = await driver.ExecutableQuery(@"
-                MATCH (p:People {PersonID: $id})
-                    DETACH DELETE p
-                ")
-                .WithConfig(new QueryConfig(database: "neo4j"))
-                .WithParameters(new { id })
-                .ExecuteAsync();
-
-            Console.WriteLine("after result delete");
-
-            return result.Result.Count > 0;
-        }
-
-        public async Task<PeopleModel?> FindByIdAsync(int id)
-        {
-            PeopleModel? person = null;
-
-            await using var driver = GraphDatabase.Driver(dbUri, AuthTokens.Basic(dbUser, dbPassword));
-            await driver.VerifyConnectivityAsync();
-
-            var result = await driver.ExecutableQuery(@"
-                MATCH (n:People {PersonID: $id}) RETURN n;
-                ")
-                .WithConfig(new QueryConfig(database: "neo4j"))
-                .WithParameters(new { id })
-                .ExecuteAsync();
-
-
-            if (result.Result.Count == 0)
-            {
-                return null;
-            }
-
-            foreach (var record in result.Result)
-            {
-                person = new PeopleModel
-                {
-                    PersonID = record["n"].As<INode>().Properties["PersonID"].As<int>(),
-                    FirstName = record["n"].As<INode>().Properties["FirstName"].As<string>(),
-                    LastName = record["n"].As<INode>().Properties["LastName"].As<string>(),
-                    Age = record["n"].As<INode>().Properties["Age"].As<int>()
-                };
-
-                Console.WriteLine("person: " + person);
-            }
-
-            return person;
+            _driver = driver;
         }
 
         public async Task<IEnumerable<PeopleModel>> GetAllAsync()
         {
             var people = new List<PeopleModel>();
 
-            await using var driver = GraphDatabase.Driver(dbUri, AuthTokens.Basic(dbUser, dbPassword));
-            await driver.VerifyConnectivityAsync();
+            await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
+            var cursor = await session.RunAsync("MATCH (n:People) RETURN n");
+            var records = await cursor.ToListAsync();
 
-            var result = await driver.ExecutableQuery(@"
-                MATCH (n:People) RETURN n
-                ")
-                .WithConfig(new QueryConfig(database: "neo4j"))
-                .ExecuteAsync();
-
-            foreach (var record in result.Result)
+            foreach (var record in records)
             {
+                var node = record["n"].As<INode>();
                 var person = new PeopleModel
                 {
-                    PersonID = record["n"].As<INode>().Properties["PersonID"].As<int>(),
-                    FirstName = record["n"].As<INode>().Properties["FirstName"].As<string>(),
-                    LastName = record["n"].As<INode>().Properties["LastName"].As<string>(),
-                    Age = record["n"].As<INode>().Properties["Age"].As<int>()
+                    PersonID = node.Properties["PersonID"].As<int>(),
+                    FirstName = node.Properties["FirstName"].As<string>(),
+                    LastName = node.Properties["LastName"].As<string>(),
+                    Age = node.Properties["Age"].As<int>()
                 };
-
-                //Console.WriteLine("person: " + person);
                 people.Add(person);
             }
 
             return people;
         }
 
+        public async Task<PeopleModel?> FindByIdAsync(int id)
+        {
+            await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
+            var cursor = await session.RunAsync("MATCH (n:People {PersonID: $id}) RETURN n", new { id });
+            var records = await cursor.ToListAsync();
+
+            if (records.Count == 0) return null;
+
+            var node = records[0]["n"].As<INode>();
+            return new PeopleModel
+            {
+                PersonID = node.Properties["PersonID"].As<int>(),
+                FirstName = node.Properties["FirstName"].As<string>(),
+                LastName = node.Properties["LastName"].As<string>(),
+                Age = node.Properties["Age"].As<int>()
+            };
+        }
+
         public async Task<bool> InsertAsync(PeopleModel dto)
         {
-
-            await using var driver = GraphDatabase.Driver(dbUri, AuthTokens.Basic(dbUser, dbPassword));
-            await driver.VerifyConnectivityAsync();
+            await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
 
             int idNum = await GetNumberOfPeople() + 1;
 
+            var cursor = await session.RunAsync(@"
+                CREATE (person:People { PersonID: $id, FirstName: $firstname, LastName: $lastname, Age: $age })
+                RETURN person",
+                new { id = idNum, firstname = dto.FirstName, lastname = dto.LastName, age = dto.Age }
+            );
 
-            var result = await driver.ExecutableQuery(@"
-                CREATE(person: People { PersonID: $id, FirstName: $firstname, LastName: $lastname, Age: $age})
-                    RETURN person;
-                ")
-                .WithConfig(new QueryConfig(database: "neo4j"))
-                .WithParameters(new { firstname = dto.FirstName, lastname = dto.LastName, age = dto.Age, id = idNum })
-                .ExecuteAsync();
-
-            return result.Result.Count > 0;
+            var records = await cursor.ToListAsync();
+            return records.Count > 0;
         }
 
         public async Task<bool> UpdateAsync(int id, PeopleModel dto)
         {
-            await using var driver = GraphDatabase.Driver(dbUri, AuthTokens.Basic(dbUser, dbPassword));
-            await driver.VerifyConnectivityAsync();
+            await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
 
-            var result = await driver.ExecutableQuery(@"
+            var cursor = await session.RunAsync(@"
                 MATCH (n:People {PersonID: $id})
-                    SET n.FirstName = $firstname, n.LastName = $lastname, n.Age = $age;
-                ")
-                .WithConfig(new QueryConfig(database: "neo4j"))
-                .WithParameters(new { firstname = dto.FirstName, lastname = dto.LastName, age = dto.Age, id = id })
-                .ExecuteAsync();
+                SET n.FirstName = $firstname, n.LastName = $lastname, n.Age = $age
+                RETURN n",
+                new { id, firstname = dto.FirstName, lastname = dto.LastName, age = dto.Age }
+            );
 
-            return result.Result.Count > 0;
+            var records = await cursor.ToListAsync();
+            return records.Count > 0;
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
+
+            var cursor = await session.RunAsync(@"
+                MATCH (p:People {PersonID: $id})
+                DETACH DELETE p
+                RETURN p",
+                new { id }
+            );
+
+            var records = await cursor.ToListAsync();
+            return records.Count > 0;
         }
 
         public async Task<int> GetNumberOfPeople()
         {
-
-            var people = new List<PeopleModel>();
-
-            await using var driver = GraphDatabase.Driver(dbUri, AuthTokens.Basic(dbUser, dbPassword));
-            await driver.VerifyConnectivityAsync();
-
-            var result = await driver.ExecutableQuery(@"
-                MATCH (n:People) RETURN n
-                ")
-                .WithConfig(new QueryConfig(database: "neo4j"))
-                .ExecuteAsync();
-
-            return result.Result.Count;
+            await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
+            var cursor = await session.RunAsync("MATCH (n:People) RETURN n");
+            var records = await cursor.ToListAsync();
+            return records.Count;
         }
     }
 }

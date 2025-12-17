@@ -37,13 +37,28 @@ namespace Stalkr
 
         private static void AddServices(WebApplicationBuilder builder)
         {
-            builder.Services.AddScoped<PeopleRepository>();
+            builder.Services.Configure<Neo4jsettings>(
+                builder.Configuration.GetSection("Neo4j")
+            );
+
+            builder.Services.AddSingleton<IDriver>(sp =>
+            {
+                var config = sp.GetRequiredService<IConfiguration>().GetSection("Neo4j");
+                string uri = config["Uri"];
+                string user = config["User"];
+                string password = config["Password"];
+                return GraphDatabase.Driver(uri, AuthTokens.Basic(user, password));
+            });
 
             builder.Services.AddScoped<IRepository<PeopleModel>, PeopleRepository>();
-            builder.Services.AddScoped<IRepository<ClassesModel>, ClassesRepository>();
 
-            // Add controllers
+
+            builder.Services.AddScoped<IRepository<ClassesModel>, ClassesRepository>();
+            builder.Services.AddScoped<IRepository<PeopleModel>, PeopleRepository>();
+
+
             builder.Services.AddControllers();
         }
+
     }
 }
