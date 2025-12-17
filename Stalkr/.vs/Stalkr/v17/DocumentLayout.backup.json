@@ -1,14 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\",
+  "WorkspaceRootPath": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\repositories\\hobbyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\hobbyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\controllers\\hobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:controllers\\hobbycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:controllers\\peoplecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\repositories\\peoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\peoplerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\models\\peoplemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\peoplemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\repositories\\classesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\classesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\models\\hobbymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\hobbymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\irepositorycs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\models\\majormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\majormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\models\\classesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\classesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\stalkr.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:stalkr.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\katri\\onedrive\\desktop\\oregontech\\f25\\cst324\\stalkr_repo\\stalkr\\stalkr\\services\\neo4jservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:services\\neo4jservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +66,224 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PeopleController.cs",
-              "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\PeopleController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PeopleController.cs",
-              "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\PeopleController.cs",
-              "RelativeToolTip": "Controllers\\PeopleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T04:39:26.538Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{47e8ae53-6b87-4489-b700-1453319ed417}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAiwDUAAAAAAAAAAAAAAA==",
+              "Title": "HobbyController.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Controllers\\HobbyController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HobbyController.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Controllers\\HobbyController.cs",
+              "RelativeToolTip": "Controllers\\HobbyController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFQAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T03:46:14.337Z",
+              "WhenOpened": "2025-12-17T05:08:22.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HobbyRepository.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\HobbyRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\HobbyRepository.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\HobbyRepository.cs*",
+              "RelativeToolTip": "Repositories\\HobbyRepository.cs*",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAkwDIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T05:00:18.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PeopleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\PeopleRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\PeopleRepository.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\PeopleRepository.cs",
+              "RelativeToolTip": "Repositories\\PeopleRepository.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:44:39.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClassesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\ClassesRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ClassesRepository.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\ClassesRepository.cs",
+              "RelativeToolTip": "Repositories\\ClassesRepository.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T04:35:26.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PeopleModel.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\PeopleModel.cs",
+              "RelativeDocumentMoniker": "Models\\PeopleModel.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\PeopleModel.cs",
+              "RelativeToolTip": "Models\\PeopleModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:52:54.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PeopleController.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Controllers\\PeopleController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PeopleController.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Controllers\\PeopleController.cs",
+              "RelativeToolTip": "Controllers\\PeopleController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAGQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:54:55.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDkAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T01:25:15.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HobbyModel.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\HobbyModel.cs",
+              "RelativeDocumentMoniker": "Models\\HobbyModel.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\HobbyModel.cs",
+              "RelativeToolTip": "Models\\HobbyModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T04:59:42.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MajorModel.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\MajorModel.cs",
+              "RelativeDocumentMoniker": "Models\\MajorModel.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\MajorModel.cs",
+              "RelativeToolTip": "Models\\MajorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:53:01.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepositorycs.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\IRepositorycs.cs",
+              "RelativeDocumentMoniker": "Repositories\\IRepositorycs.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Repositories\\IRepositorycs.cs",
+              "RelativeToolTip": "Repositories\\IRepositorycs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:40:44.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Stalkr.http",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Stalkr.http",
+              "RelativeDocumentMoniker": "Stalkr.http",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Stalkr.http",
+              "RelativeToolTip": "Stalkr.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-12-14T06:11:46.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClassesModel.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\ClassesModel.cs",
+              "RelativeDocumentMoniker": "Models\\ClassesModel.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Models\\ClassesModel.cs",
+              "RelativeToolTip": "Models\\ClassesModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T02:06:10.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Neo4jService.cs",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Services\\Neo4jService.cs",
+              "RelativeDocumentMoniker": "Services\\Neo4jService.cs",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Services\\Neo4jService.cs",
+              "RelativeToolTip": "Services\\Neo4jService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T01:37:30.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-14T01:32:35.703Z",
               "EditorCaption": ""
             }
           ]

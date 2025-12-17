@@ -7,11 +7,11 @@ namespace Stalkr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PeopleController : ControllerBase
+    public class HobbyController : ControllerBase
     {
-        private readonly IRepository<PeopleModel> _repo;
+        private readonly IRepository<HobbyModel> _repo;
 
-        public PeopleController(IRepository<PeopleModel> repo)
+        public HobbyController(IRepository<HobbyModel> repo)
         {
             _repo = repo;
         }
@@ -21,7 +21,6 @@ namespace Stalkr.Controllers
         {
             try
             {
-                Console.WriteLine("In ppl controller");
                 var people = await _repo.GetAllAsync();
                 return Ok(people);
             }
@@ -50,7 +49,7 @@ namespace Stalkr.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreatePersonAsync([FromBody] PeopleModel pplModel)
+        public async Task<IActionResult> CreatePersonAsync([FromBody] HobbyModel pplModel)
         {
             try
             {
@@ -83,7 +82,7 @@ namespace Stalkr.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdatePersonAsync(int id, [FromBody] PeopleModel updatedPeople)
+        public async Task<IActionResult> UpdatePersonAsync(int id, [FromBody] HobbyModel updatedPeople)
         {
             try
             {
@@ -100,5 +99,4 @@ namespace Stalkr.Controllers
             }
         }
     }
-
 }
