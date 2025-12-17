@@ -400,3 +400,7 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
+/Stalkr/obj/Debug/net8.0/Stalkr.AssemblyInfo.cs
+/Stalkr/obj/Debug/net8.0/Stalkr.AssemblyInfoInputs.cache
+/Stalkr/obj/Debug/net8.0/Stalkr.assets.cache
+/Stalkr/obj/Debug/net8.0/Stalkr.GeneratedMSBuildEditorConfig.editorconfig
