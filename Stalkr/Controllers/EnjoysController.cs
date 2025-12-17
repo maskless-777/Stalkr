@@ -6,11 +6,11 @@ namespace Stalkr.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EnrolledInController : ControllerBase
+    public class EnjoysController : ControllerBase
     {
-        private readonly EnrolledInRepository _repo;
+        private readonly EnjoysRepository _repo;
 
-        public EnrolledInController(EnrolledInRepository repo)
+        public EnjoysController(EnjoysRepository repo)
         {
             _repo = repo;
         }
@@ -27,22 +27,22 @@ namespace Stalkr.Controllers
         {
             var list = await _repo.GetByPersonIdAsync(personId);
             if (!list.Any())
-                return NotFound($"Person {personId} is not enrolled in any classes");
+                return NotFound($"Person {personId} has no hobbies");
             return Ok(list);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] EnrolledInRelationshipModel rel)
+        public async Task<IActionResult> Create([FromBody] EnjoysRelationshipModel rel)
         {
             var success = await _repo.CreateAsync(rel);
-            return success ? Ok("Enrollment created") : StatusCode(500, "Failed to create enrollment");
+            return success ? Ok("Enjoys relationship created") : StatusCode(500, "Failed to create relationship");
         }
 
-        [HttpDelete("{personId}/{courseId}")]
-        public async Task<IActionResult> Delete(int personId, int courseId)
+        [HttpDelete("{personId}/{hobbyId}")]
+        public async Task<IActionResult> Delete(int personId, int hobbyId)
         {
-            var success = await _repo.DeleteAsync(personId, courseId);
-            return success ? Ok("Enrollment deleted") : NotFound("Enrollment not found");
+            var success = await _repo.DeleteAsync(personId, hobbyId);
+            return success ? Ok("Enjoys relationship deleted") : NotFound("Relationship not found");
         }
     }
 }

@@ -3,64 +3,65 @@ using Stalkr.Models;
 
 namespace Stalkr.Repositories
 {
-    public class EnrolledInRepository
+    public class EnjoysRepository
     {
         private readonly IDriver _driver;
 
-        public EnrolledInRepository(IDriver driver)
+        public EnjoysRepository(IDriver driver)
         {
             _driver = driver;
         }
 
-        public async Task<bool> CreateAsync(EnrolledInRelationshipModel rel)
+        public async Task<bool> CreateAsync(EnjoysRelationshipModel rel)
         {
             await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
 
             var cursor = await session.RunAsync(@"
-                MATCH (p:People {PersonID: $personId}), (c:Classes {CourseID: $courseId})
-                MERGE (p)-[r:ENROLLED_IN]->(c)
+                MATCH (p:People {PersonID: $personId}), (h:Hobbies {HobbyID: $hobbyId})
+                MERGE (p)-[r:ENJOYS]->(h)
                 RETURN r",
-                new { personId = rel.PersonID, courseId = rel.CourseID }
+                new { personId = rel.PersonID, hobbyId = rel.HobbyID }
             );
 
             var records = await cursor.ToListAsync();
             return records.Count > 0;
         }
 
-        public async Task<bool> DeleteAsync(int personId, int courseId)
+        public async Task<bool> DeleteAsync(int personId, int hobbyId)
         {
             await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
 
             var cursor = await session.RunAsync(@"
-                MATCH (p:People {PersonID: $personId})-[r:ENROLLED_IN]->(c:Classes {CourseID: $courseId})
+                MATCH (p:People {PersonID: $personId})-[r:ENJOYS]->(h:Hobbies {HobbyID: $hobbyId})
                 DELETE r
                 RETURN r",
-                new { personId, courseId }
+                new { personId, hobbyId }
             );
 
             var records = await cursor.ToListAsync();
             return records.Count > 0;
         }
-        public async Task<IEnumerable<EnrolledInRelationshipModel>> GetAllAsync()
+
+        public async Task<IEnumerable<EnjoysRelationshipModel>> GetAllAsync()
         {
-            var list = new List<EnrolledInRelationshipModel>();
+            var list = new List<EnjoysRelationshipModel>();
             await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
 
             var cursor = await session.RunAsync(@"
-                MATCH (p:People)-[r:ENROLLED_IN]->(c:Classes)
-                RETURN p, c"
+                MATCH (p:People)-[r:ENJOYS]->(h:Hobbies)
+                RETURN p, h"
             );
 
             var records = await cursor.ToListAsync();
             foreach (var record in records)
             {
                 var personNode = record["p"].As<INode>();
-                var classNode = record["c"].As<INode>();
+                var hobbyNode = record["h"].As<INode>();
 
-                list.Add(new EnrolledInRelationshipModel
+                list.Add(new EnjoysRelationshipModel
                 {
                     PersonID = personNode.Properties["PersonID"].As<int>(),
-                    CourseID = classNode.Properties["CourseID"].As<string>(),
+                    HobbyID = hobbyNode.Properties["HobbyID"].As<int>(),
                     Person = new PeopleModel
                     {
                         PersonID = personNode.Properties["PersonID"].As<int>(),
@@ -68,11 +69,10 @@ namespace Stalkr.Repositories
                         LastName = personNode.Properties["LastName"].As<string>(),
                         Age = personNode.Properties["Age"].As<int>()
                     },
-                    Class = new ClassesModel
+                    Hobby = new HobbyModel
                     {
-                        CourseID = classNode.Properties["CourseID"].As<string>(),
-                        CourseName = classNode.Properties["CourseName"].As<string>(),
-                        CourseTerm = classNode.Properties["CourseTerm"].As<string>()
+                        HobbyID = hobbyNode.Properties["HobbyID"].As<int>(),
+                        HobbyName = hobbyNode.Properties["HobbyName"].As<string>()
                     }
                 });
             }
@@ -80,14 +80,14 @@ namespace Stalkr.Repositories
             return list;
         }
 
-        public async Task<IEnumerable<EnrolledInRelationshipModel>> GetByPersonIdAsync(int personId)
+        public async Task<IEnumerable<EnjoysRelationshipModel>> GetByPersonIdAsync(int personId)
         {
-            var list = new List<EnrolledInRelationshipModel>();
+            var list = new List<EnjoysRelationshipModel>();
             await using var session = _driver.AsyncSession(o => o.WithDatabase("neo4j"));
 
             var cursor = await session.RunAsync(@"
-                MATCH (p:People {PersonID: $personId})-[r:ENROLLED_IN]->(c:Classes)
-                RETURN p, c",
+                MATCH (p:People {PersonID: $personId})-[r:ENJOYS]->(h:Hobbies)
+                RETURN p, h",
                 new { personId }
             );
 
@@ -95,12 +95,12 @@ namespace Stalkr.Repositories
             foreach (var record in records)
             {
                 var personNode = record["p"].As<INode>();
-                var classNode = record["c"].As<INode>();
+                var hobbyNode = record["h"].As<INode>();
 
-                list.Add(new EnrolledInRelationshipModel
+                list.Add(new EnjoysRelationshipModel
                 {
                     PersonID = personNode.Properties["PersonID"].As<int>(),
-                    CourseID = classNode.Properties["CourseID"].As<string>(),
+                    HobbyID = hobbyNode.Properties["HobbyID"].As<int>(),
                     Person = new PeopleModel
                     {
                         PersonID = personNode.Properties["PersonID"].As<int>(),
@@ -108,11 +108,10 @@ namespace Stalkr.Repositories
                         LastName = personNode.Properties["LastName"].As<string>(),
                         Age = personNode.Properties["Age"].As<int>()
                     },
-                    Class = new ClassesModel
+                    Hobby = new HobbyModel
                     {
-                        CourseID = classNode.Properties["CourseID"].As<string>(),
-                        CourseName = classNode.Properties["CourseName"].As<string>(),
-                        CourseTerm = classNode.Properties["CourseTerm"].As<string>()
+                        HobbyID = hobbyNode.Properties["HobbyID"].As<int>(),
+                        HobbyName = hobbyNode.Properties["HobbyName"].As<string>()
                     }
                 });
             }

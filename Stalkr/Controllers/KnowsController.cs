@@ -16,7 +16,7 @@ namespace Stalkr.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllWithDetails()
+        public async Task<IActionResult> GetAll()
         {
             var list = await _repo.GetAllAsync();
             return Ok(list);
