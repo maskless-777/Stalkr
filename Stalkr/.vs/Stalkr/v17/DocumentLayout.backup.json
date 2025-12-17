@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\controllers\\enrolledincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:controllers\\enrolledincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\repositories\\enrolledinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:repositories\\enrolledinrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\models\\enrolledinrelationshipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\enrolledinrelationshipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\controllers\\knowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:controllers\\knowscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\models\\knowsrelationshipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:models\\knowsrelationshipmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ECF9CC7D-B191-4EF3-9385-18B80EDFCC75}|Stalkr.csproj|c:\\users\\islan\\documents\\github\\stalkrrepo\\stalkr\\repositories\\majorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,37 +58,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "EnrolledInController.cs",
+              "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\EnrolledInController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EnrolledInController.cs",
+              "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\EnrolledInController.cs",
+              "RelativeToolTip": "Controllers\\EnrolledInController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAmwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T05:53:52.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnrolledInRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Repositories\\EnrolledInRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EnrolledInRepository.cs",
+              "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Repositories\\EnrolledInRepository.cs",
+              "RelativeToolTip": "Repositories\\EnrolledInRepository.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwD4AAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T05:53:07.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnrolledInRelationshipModel.cs",
+              "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Models\\EnrolledInRelationshipModel.cs",
+              "RelativeDocumentMoniker": "Models\\EnrolledInRelationshipModel.cs",
+              "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Models\\EnrolledInRelationshipModel.cs",
+              "RelativeToolTip": "Models\\EnrolledInRelationshipModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T05:52:33.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "KnowsController.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\KnowsController.cs",
               "RelativeDocumentMoniker": "Controllers\\KnowsController.cs",
               "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\KnowsController.cs",
               "RelativeToolTip": "Controllers\\KnowsController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T05:30:52.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "KnowsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Repositories\\KnowsRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\KnowsRepository.cs",
               "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Repositories\\KnowsRepository.cs",
               "RelativeToolTip": "Repositories\\KnowsRepository.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAkwB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAiwFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T05:30:24.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "KnowsRelationshipModel.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Models\\KnowsRelationshipModel.cs",
               "RelativeDocumentMoniker": "Models\\KnowsRelationshipModel.cs",
@@ -89,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "MajorsController.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\MajorsController.cs",
               "RelativeDocumentMoniker": "Controllers\\MajorsController.cs",
@@ -102,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "MajorModel.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Models\\MajorModel.cs",
               "RelativeDocumentMoniker": "Models\\MajorModel.cs",
@@ -115,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MajorRepository.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Repositories\\MajorRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\MajorRepository.cs",
@@ -128,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "PeopleRepository.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Repositories\\PeopleRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\PeopleRepository.cs",
@@ -141,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "PeopleController.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Controllers\\PeopleController.cs",
               "RelativeDocumentMoniker": "Controllers\\PeopleController.cs",
@@ -154,13 +205,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwDkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAmwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T03:46:14.337Z",
               "EditorCaption": ""
