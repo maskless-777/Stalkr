@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Stalkr")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1b4e53fd7a72d82924e9feb549294ec490e4c60")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab8787d18deeb5caca16d2a68b069fbe22017bd9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Stalkr")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Stalkr")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
