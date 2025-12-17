@@ -1,8 +1,9 @@
 using Neo4j.Driver;
 using Stalkr.Models;
 using Stalkr.Repositories;
+using Microsoft.Extensions.Options;
 
-namespace testStalkr
+namespace Stalkr
 {
     public class Program
     {
@@ -11,14 +12,12 @@ namespace testStalkr
             var builder = WebApplication.CreateBuilder(args);
             AddServices(builder);
 
-
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -32,19 +31,26 @@ namespace testStalkr
         private static void ConfigureApplication(WebApplication app)
         {
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
         }
 
         private static void AddServices(WebApplicationBuilder builder)
         {
-            builder.Services.AddScoped<PeopleRepository>();
+            builder.Services.Configure<Neo4jsettings>(
+                builder.Configuration.GetSection("Neo4j")
+            );
 
-            // Add services to the container.
+            builder.Services.AddSingleton<IDriver>(sp =>
+            {
+                var config = sp.GetRequiredService<IOptions<Neo4jsettings>>().Value;
+                return GraphDatabase.Driver(config.Uri, AuthTokens.Basic(config.User, config.Password));
+            });
 
+            builder.Services.AddScoped<IRepository<PeopleModel>, PeopleRepository>();
+            builder.Services.AddScoped<IRepository<ClassesModel>, ClassesRepository>();
+
+            // Add controllers
             builder.Services.AddControllers();
         }
     }
