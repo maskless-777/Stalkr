@@ -54,6 +54,8 @@ namespace Stalkr
             builder.Services.AddScoped<IRepository<ClassesModel>, ClassesRepository>();
             builder.Services.AddScoped<IRepository<PeopleModel>, PeopleRepository>();
             builder.Services.AddScoped<IRepository<HobbyModel>, HobbyRepository>();
+            builder.Services.AddScoped<KnowsRepository>();
+
 
 
             builder.Services.AddControllers();

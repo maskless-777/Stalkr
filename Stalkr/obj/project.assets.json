@@ -26,7 +26,7 @@
           }
         }
       },
-      "Neo4j.Driver/5.28.3": {
+      "Neo4j.Driver/5.28.4": {
         "type": "package",
         "dependencies": {
           "System.IO.Pipelines": "8.0.0"
@@ -370,10 +370,10 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Neo4j.Driver/5.28.3": {
-      "sha512": "nGfPRmx11Ma/dWcy54swbP+5tu++KrvR5DZgSWi/zAgFEPoObubGaO540i0flTleH0sZQkO8X9lAg4H2Y05ffg==",
+    "Neo4j.Driver/5.28.4": {
+      "sha512": "o7oAvl7ourlDsGE8nO3sGOmYAOP+b/vV4ddV20LYIm871VfsJMpd4d8UkvSwPVYT1bkGPh8M39OuWHD8qcYxBg==",
       "type": "package",
-      "path": "neo4j.driver/5.28.3",
+      "path": "neo4j.driver/5.28.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -384,7 +384,7 @@
         "lib/net8.0/Neo4j.Driver.xml",
         "lib/netstandard2.0/Neo4j.Driver.dll",
         "lib/netstandard2.0/Neo4j.Driver.xml",
-        "neo4j.driver.5.28.3.nupkg.sha512",
+        "neo4j.driver.5.28.4.nupkg.sha512",
         "neo4j.driver.nuspec"
       ]
     },
@@ -522,28 +522,28 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Neo4j.Driver >= 5.28.3",
+      "Neo4j.Driver >= 5.28.4",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\katri\\.nuget\\packages\\": {},
+    "C:\\Users\\Islan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Stalkr.csproj",
+      "projectUniqueName": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Stalkr.csproj",
       "projectName": "Stalkr",
-      "projectPath": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\Stalkr.csproj",
-      "packagesPath": "C:\\Users\\katri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\katri\\OneDrive\\Desktop\\OregonTech\\F25\\CST324\\Stalkr_repo\\Stalkr\\Stalkr\\obj\\",
+      "projectPath": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\Stalkr.csproj",
+      "packagesPath": "C:\\Users\\Islan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Islan\\Documents\\GitHub\\StalkrRepo\\Stalkr\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\katri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Islan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -552,6 +552,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -569,8 +570,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -578,7 +578,7 @@
         "dependencies": {
           "Neo4j.Driver": {
             "target": "Package",
-            "version": "[5.28.3, )"
+            "version": "[5.28.4, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -604,7 +604,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.415/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
