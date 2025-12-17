@@ -59,8 +59,7 @@ namespace Stalkr
             builder.Services.AddScoped<EnrolledInRepository>();
             builder.Services.AddScoped<EnjoysRepository>();
             builder.Services.AddScoped<AttendsRepository>();
-
-
+            builder.Services.AddScoped<PrereqRepository>();
 
             builder.Services.AddControllers();
         }
